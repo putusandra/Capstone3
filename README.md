@@ -1,4 +1,5 @@
-1.1 Context
+##**1.1 Context**
+
 Perusahaan TeleHub ingin meningkatkan revenue dengan menjaga anggaran tetap efisien. Biaya mengakuisisi pelanggan baru umumnya lebih besar daripada mempertahankan pelanggan yang sudah ada. Menurut beberapa sumber, Acquisition Cost 5x lebih besar daripada Retention Cost. Oleh sebab itu selain promosi, diperlukan juga upaya menganalisis pola-pola terjadinya customer churn.
 
 Hasil dari analisa ini diharapkan mampu memberi wawasan bagi:
@@ -11,13 +12,15 @@ Target
 
 0 : customer tidak churn
 1 : customer churn atau berpindah ke provider lain
-1.2 Problem Statement
+
+##**1.2 Problem Statement**
 Problem Statement for Analytic
 
-Bagaimana pola customer yang paling banyak churn?
-Apa yang membuat customer bertahan menggunakan TeleHub?
-Apa produk unggulan yang dimiliki TeleHub?
-Layanan apa yang paling tidak diminati oleh customer TeleHub?
+* Bagaimana pola customer yang paling banyak churn?
+* Apa yang membuat customer bertahan menggunakan TeleHub?
+* Apa produk unggulan yang dimiliki TeleHub?
+* Layanan apa yang paling tidak diminati oleh customer TeleHub?
+
 Problem Statement for Machine Learning
 
 Manakah fitur yang berdampak pada customer churn?
