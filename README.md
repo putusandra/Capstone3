@@ -91,11 +91,11 @@ RepeatedStratifiedKFold dan GridSearchCV digunakan untuk mencari nilai paramater
 
 | Model |  Sebelum  | Setelah |
 |:-:|:-:|:-:|
-| Logistic Regression | 0.787 | 0.799 |
-| Decision Tree Classifier | 0.531 | 0.753 |
-| Random Forest Classifier | 0.538 | 0.713 |
-| XGBoost Classifier | 0.559 | 0.643 |
-| K Nearest Classifier | 0.764 | 0.632 |
+| Logistic Regression | 0.799 | 0.799 |
+| Decision Tree Classifier | 0.559 | 0.753 |
+| Random Forest Classifier | 0.598 | 0.713 |
+| XGBoost Classifier | 0.703 | 0.643 |
+| K Nearest Classifier | 0.713 | 0.632 |
 
 Berdasarkan hasil confusion matrix dan waktu perhitungan, performa terbaik tampak pada model Decision Tree Classifier. Setelah dilakukan hyperparameter tuning pada model, 'recall' score bertambah drastis, yaitu dari 0.48 menjadi 0.85
 
@@ -118,10 +118,11 @@ Namun, yang perlu diingat juga bahwa terdapat konsekuensi lain. Yakni dari 100 p
 
 ### Rekomendasi dan Insight
 
-1. Terdapat pemasukan kotor sebesar $2.862.926,9 dollar AS yang hilang akibat pelanggan yang churn.
-2. Perusahaan harus lebih memperhatikan:
-    - Senior citizen, karena lebih berpotensi untuk churn.
-    - Fiber optic, baik dari segi harga maupun kualitas. Karena ada indikasi dapat meningkatkan potensi pelanggan untuk churn.
-    - Tech support dan online security sebagai fitur unggulan. Dapat dijadikan sebagai sarana promosi kepada pelanggan yang berpotensi untuk churn.
-    - 12 bulan pertama pelanggan mulai menggunakan layanan adalah masa yang penting untuk membuat pelanggan merasa nyaman dengan pelayanan yang diberikan. 
-3. Tidak ada perbedaan signifikan bagi pria maupun wanita dalam kecenderungan untuk churn. Strategi apapun yang akan dilakukan dapat berjalan pada kedua gender.
+* Terdapat churn lebih besar pada pelanggan yang memiliki tanggungan. Strategi yang dapat dilakukan yakni memberikan promo bagi target market keluarga. 
+* Layanan internet dengan fiber optic harganya cenderung lebih mahal dari DSL, sehingga kualitasnya mesti dipastikan secara baik agar mampu meretensi pelanggan yang memang mengutamakan kualitas.
+* Tech support dan online security sebagai fitur unggulan dapat dijadikan sebagai sarana promosi kepada pelanggan yang berpotensi untuk churn.
+* Masa 12 bulan pertama mulai berlangganan adalah periode krusial untuk follow up tingkat kepuasan pelanggan.
+* Sediakan produk dan jasa yang lebih variatif agar bisa menjadi one stop solution bagi pelanggan, sehingga meningkatkan daya tawar.
+* Biaya bulanan yang tinggi sebaiknya disertai dengan bonus layanan tertentu untuk meretensi pelanggan.
+* Perhatikan kenyamanan teknis dan antar-muka pengguna pada aplikasi yang digunakan perusahaan untuk promosi dan pembayaran.
+* Menyebar kuesioner evaluasi kepada pelanggan untuk menarik feedback dan komplain, kemudian menyusun ke dalam dataset agar dapat dianalisa. Sehingga ke depannya dapat dilakukan perbaikan yang tepat sasaran.
